@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: .5px;
+}
+
+body {
+    background: #68aacd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    height: 130vh;
+    background: #ececec;
+    padding-top: 50px;
+}
+
+.main h1 {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 6vmin;
+    color: #1E3D5B;
+}
+
+.line {
+    width: 100px;
+    height: 3px;
+    background: #1E3D5B;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
+.main h3 {
+    text-align: center;
+    font-size: 3.2vmin;
+    letter-spacing: 1px;
+    color: #1E3D5B;
+    margin: 15px;
+}
+
+.filtro {
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1E3D5B;
+}
+
+.filtro-btn {
+    width: 20%;
+    height: 48px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    background-color: #68aacd;
+    color:white;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
+.filtro-btn:hover {
+    background: #1E3D5B;
+}
+
+.procura {
+    width: 70%;
+    height: 50px;
+    border-radius: 10px 0px 0px 10px;
+    text-indent: 10px;
+    transition: .5s;
+    border: 2px solid white;
+    background-color: #dedede;
+    font-size: 15px;
+    outline: none;
+}
+
+.financeiro {
+    border-collapse: collapse;
+    width: 850px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px 5px rgba(0,0,0,.15);
+    margin: 50px auto;
+    border: 2px solid #68aacd;
+    text-align: center;
+}
+
+.financeiro thead tr {
+    border-bottom: 1px solid gray;
+}
+
+.financeiro thead tr td{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px ;
+    border-left: 1px solid gray;
+    background: #68aacd;
+    color: white;
+}
+
+.financeiro tbody tr td {
+    border-left: 1px solid gray;
+    
+    font-size: 15px;
+    padding: 8px ;
+}
+
+
+@media(max-width:980px) {
+    .financeiro thead{
+        display: none;
+    }
+
+    .main {
+        height: 2200px;
+    }
+
+    .filtro {
+        width: 95%;
+        border: 2px solid #1E3D5B;
+    }
+
+    .procura {
+        width: 60%;
+    }
+
+    .filtro-btn {
+        width: 30%;
+    }
+
+    .financeiro, .financeiro tbody, .financeiro tr, .financeiro td {
+        display: block;
+        width: 100%;
+    }
+
+    .financeiro tr {
+        margin-bottom: 15px;
+    }
+
+    .financeiro td {
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+
+    .financeiro td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        
+    }
+}
+

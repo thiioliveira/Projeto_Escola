@@ -1,0 +1,46 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #1E3D5B;
+    gap: 40px;
+    color: white;
+    padding: 30px;
+}
+
+.footer p {
+    margin: 6px;
+    font-size: 16px;
+}
+
+.footer h4 {
+    margin: 2px;
+    font-size: 20px;
+}
+
+.footer i {
+    font-size: 50px;
+    margin-top: 5px;
+    transition: .4s;
+    margin-right: 20px;
+    cursor: pointer;
+    color: #00aff0;
+}
+
+.footer i:hover {
+    transform: scale(1.2);
+}
+
+.right {
+    text-align: center;
+}
+
+@media (max-width:870px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer p {
+        text-align: center;
+    }   
+}
